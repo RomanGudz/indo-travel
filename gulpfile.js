@@ -20,8 +20,7 @@ import gulpBabel from 'gulp-babel';
 const prepros = true;
 let dev = false;
 const sass = gulpSass(sassPkg);
-const allJS = ['./src/js/script/jquery-3.7.1.min.js',
-  // './src/js/script/jquery-ui.min.js',
+const allJS = [
   './src/js/script/swiper-bundle.min.js',
 ]
 
