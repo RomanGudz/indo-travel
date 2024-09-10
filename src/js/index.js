@@ -8,17 +8,17 @@ const swiper = new Swiper('.about__picture-swiper', {
   pagination: {
     el: ".swiper-pagination",
   },
-  // autoplay: {
-  //   delay: 1000,
-  // },
+  autoplay: {
+    delay: 1000,
+  },
 });
 
 const album = new Swiper('.album__slider', {
   direction: 'horizontal',
   loop: true,
-  // autoplay: {
-  //   delay: 4000
-  // },
+  autoplay: {
+    delay: 4000
+  },
   navigation: {
     nextEl: '.album__slider-right',
     prevEl: '.album__slider-left',
@@ -83,26 +83,14 @@ const hoverZoneRight = document.querySelector('.hover-zone-right');
 hoverZoneRight.addEventListener('mouseenter', (e) => {
   slideRight.classList.add('album__slider-visible');
   sliderLeft.classList.remove('album__slider-visible');
-  // slider.style.transform = 'translate3d(-20%, 0px, 0px)'; // Сдвиг влево на 20%
-  // slider.style.transition = 'transform 0.5s ease';
 });
 
-// hoverZoneRight.addEventListener('mouseleave', (e) => {
-//   // slider.style.transform = 'translate3d(0px, 0px, 0px)';   // Возврат на место
-//   // slider.style.transition = 'transform 0.5s ease';
-// });
 
 hoverZoneLeft.addEventListener('mouseenter', (e) => {
-  // slider.style.transform = 'translate3d(20%, 0px, 0px)';   // Сдвиг вправо на 20%
-  // slider.style.transition = 'transform 0.5s ease';
   slideRight.classList.remove('album__slider-visible');
   sliderLeft.classList.add('album__slider-visible');
 });
 
-// hoverZoneLeft.addEventListener('mouseleave', (e) => {
-//   slider.style.transform = 'translate3d(0px, 0px, 0px)';   // Возврат на место
-//   slider.style.transition = 'transform 0.5s ease';
-// });
 
 const selects = document.querySelectorAll('.calculator__form-select');
 const selectMoth = document.querySelectorAll('.calculator__form-list-month');
