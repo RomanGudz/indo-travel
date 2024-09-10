@@ -1,0 +1,221 @@
+.calculator__form-select-wrapper-select {
+  position: absolute;
+  padding: 20px 20px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--2);
+  color: var(--1);
+  top: 111px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease opacity;
+}
+
+.active-select-date {
+  visibility: visible;
+  opacity: 1;
+}
+
+.calculator__form-select-wrapper-select-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.calculator__form-select-wrapper-date-lists {
+  display: flex;
+  flex-direction: row;
+  gap: 41px;
+  position: relative;
+}
+
+.calculator__form-select-wrapper-date-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.calculator__form-list-month {
+  cursor: pointer;
+  color: #c0c0c0;
+}
+
+.date-list-moth {
+  padding-top: 29px;
+  width: 7.8vw;
+}
+
+.date-list-moth:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 240px;
+  background: #c0c0c0;
+  top: 9px;
+  left: 50%;
+}
+
+.calculator__form-select-wrapper-date-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.date-list-days {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.calculator__form-list-day {
+  cursor: pointer;
+  width: 105px;
+  height: 24px;
+}
+
+.month-active {
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--3);
+}
+
+.btn-calc {
+  float: right;
+  margin-top: 36px;
+  width: 106px;
+  height: 38px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--2);
+  border-radius: 8px;
+  padding: 10px 0;
+  background-color: var(--3);
+}
+
+.list-people {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+}
+.list-people-item {
+  cursor: pointer;
+  width: 10px;
+}
+
+.wrapper-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper-options-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wrapper-options-checkbox-list-label {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 14px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 180px;
+}
+
+.wrapper-options-checkbox-list-label-input {
+  appearance: none;
+  border: 1px solid var(--1);
+  width: 16px;
+  height: 16px;
+}
+
+.calculator__form-select-wrapper-select-button {
+  margin-top: 0;
+  align-self: flex-end;
+}
+
+.calculator__form-list-day:hover,
+.calculator__form-list-day:focus {
+  font-size: 16px;
+}
+
+.calculator__form-list-day:active {
+  font-size: 16px;
+  color: var(--3);
+}
+
+.list-people-item:hover,
+.list-people-item:focus {
+  font-size: 18px;
+}
+
+.list-people-item:active {
+  font-size: 18px;
+  color: var(--3);
+}
+
+.wrapper-options-checkbox-list-label:hover
+  .wrapper-options-checkbox-list-label-input {
+  border: 1px solid var(--3);
+}
+
+.wrapper-options-checkbox-list-label:focus
+  .wrapper-options-checkbox-list-label-input {
+  border: 1px solid #c2900f;
+}
+
+.wrapper-options-checkbox-list-label:active
+  .wrapper-options-checkbox-list-label-input {
+  border: 1px solid var(--3);
+  content: "";
+}
+
+.wrapper-options-checkbox-list-label-input:checked::before {
+  content: "\2713";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  color: var(--3);
+  font-size: 12px;
+}
+
+.wrapper-options-checkbox-list-label-input:disabled {
+  border: 1px solid var(--4);
+}
+
+@media (hover: none) {
+  .calculator__form-list-day:hover {
+    font-size: initial;
+  }
+  .list-people-item:hover {
+    font-size: initial;
+  }
+  .wrapper-options-checkbox-list-label:hover {
+    font-size: initial;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .calculator__form-select-wrapper-select {
+    right: 30px;
+    top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator__form-select-wrapper-select {
+    right: 0;
+  }
+}

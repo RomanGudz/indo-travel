@@ -1,0 +1,250 @@
+.header {
+  background-image: url(../img/indonesia-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 820px;
+  font-family: var(--font-family);
+}
+.header__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+}
+
+.header__menu-button {
+  border: none;
+  background: none;
+}
+
+.header__menu-button-svg {
+  fill: var(--2);
+}
+
+.header__menu {
+  position: absolute;
+  top: 97px;
+  right: 169px;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s ease opacity;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 35px;
+  border-radius: 20px 0;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--3);
+  color: var(--2);
+}
+
+.header__menu-list-item-link {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.header__container-wrapper {
+  padding-top: 105px;
+  color: var(--2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header__container-wrapper-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.header__container-wrapper-title-h1 {
+  font-weight: 200;
+  font-size: clamp(130px, 13vw, 200px);
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.header__container-wrapper-p:first-of-type {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+}
+
+.header__container-wrapper-p {
+  font-weight: 700;
+  line-height: 150%;
+  padding-top: 10px;
+  white-space: pre-line;
+}
+.header__container-wrapper-button {
+  justify-self: end;
+  align-self: flex-end;
+  margin-right: 10px;
+  border: none;
+  border-radius: 12px;
+  max-width: 360px;
+  padding: 24px 111px;
+}
+
+.header__menu_active {
+  opacity: 1;
+  z-index: 3;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    height: 584px;
+  }
+  .header__container {
+    padding-top: 40px;
+  }
+  .header__logo {
+    width: 136px;
+    height: 26px;
+  }
+
+  .header__menu {
+    top: 71px;
+    right: 77px;
+  }
+
+  .header__container-wrapper {
+    padding-top: 63px;
+    gap: 27px;
+  }
+
+  .header__container-wrapper-title-h1 {
+    font-size: clamp(90px, 15vw, 150px);
+    line-height: 107%;
+  }
+
+  .header__container-wrapper-p:first-of-type {
+    font-size: 30px;
+  }
+
+  .header__container-wrapper-p {
+    font-size: 18px;
+    padding-top: 0;
+  }
+  .header__container-wrapper-button {
+    border-radius: 10px;
+    padding: 18px 81px;
+    max-width: 299px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 438px;
+  }
+  .header__container {
+    padding-top: 38px;
+  }
+  .header__logo {
+    width: 140px;
+    height: 27px;
+  }
+
+  .header__menu {
+    top: 63px;
+    right: 72px;
+  }
+
+  .header__menu-list {
+    gap: 20px;
+    padding: 30px 30px;
+  }
+
+  .header__menu-list-item-link {
+    font-size: 14px;
+  }
+  .header__container-wrapper {
+    padding-top: 49px;
+    gap: 14px;
+  }
+
+  .header__container-wrapper-title-h1 {
+    font-size: clamp(50px, 13vw, 100px);
+    line-height: 120%;
+  }
+
+  .header__container-wrapper-p {
+    font-size: 14px;
+  }
+
+  .header__container-wrapper-p:first-of-type {
+    font-size: 20px;
+  }
+  .header__container-wrapper-button {
+    border-radius: 6px;
+    padding: 12px 57px;
+    max-width: 220px;
+    font-size: 14px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 312px;
+  }
+  .header__container {
+    padding-top: 21px;
+  }
+  .header__logo {
+    width: 104px;
+    height: 20px;
+  }
+  .header__menu-button-svg {
+    width: 25px;
+    height: 11px;
+  }
+  .header__menu {
+    top: 44px;
+    right: 47px;
+    border-radius: 14px 0;
+  }
+  .header__menu-list {
+    gap: 23px;
+    padding: 20px;
+  }
+
+  .header__menu-list-item-link {
+    font-size: 12px;
+  }
+  .header__container-wrapper {
+    padding-top: 40px;
+    gap: 26px;
+  }
+
+  .header__container-wrapper-title-h1 {
+    font-size: 50px;
+    line-height: 108%;
+  }
+  .header__container-wrapper-p:first-of-type {
+    font-size: 16px;
+  }
+
+  .header__container-wrapper-p {
+    font-size: 12px;
+  }
+
+  .header__container-wrapper-button {
+    border-radius: 4px;
+    padding: 8px 30px;
+    font-size: 12px;
+    max-width: 151px;
+    height: 34px;
+  }
+}

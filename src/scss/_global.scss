@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url("../fonts/Nunito-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Nunito-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url("../fonts/Nunito-Light.woff2") format("woff2"),
+    url("../fonts/Nunito-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url("../fonts/Nunito-SemiBold.woff2") format("woff2"),
+    url("../fonts/Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url("../fonts/Nunito-Bold.woff2") format("woff2"),
+    url("../fonts/Nunito-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: local("Merriweather"),
+    url("../fonts/merriweather-regular.woff2") format("woff2"),
+    url("../fonts/merriweather-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"), url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --1: #303030;
+  --2: #fff;
+  --3: #fcb500;
+  --4: #afafaf;
+  --font-family: "Nunito", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+  --third-family: "Open Sans", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--1);
+  background-color: var(--2);
+  min-width: 320px;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+section {
+  padding: 75px 0;
+}
+
+/*
+Доступно скрываю элементы
+*/
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/*
+Пример контейнера
+
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+
+.container {
+  max-width: 1440px;
+  padding: 0 130px;
+  margin: 0 auto;
+  // position: relative;
+}
+
+.btn-animation {
+  color: var(--2);
+  background-color: var(--3);
+  border: 2px solid transparent;
+  transition: 0.3s ease background-color border;
+}
+
+.btn-animation:hover {
+  background-color: #f3c858;
+}
+
+.btn-animation:focus {
+  border: 2px solid #c2900f;
+  background-color: #f3c858;
+}
+
+.btn-animation:active {
+  background-color: #d09600;
+}
+
+.btn-animation:disabled {
+  background-color: var(--4);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 42px;
+    margin: 0 auto;
+  }
+
+  .visually-hidden-1000px {
+    position: fixed;
+    transform: scale(0);
+  }
+  section {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 34px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 45px 0;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 430px;
+    padding: 0 25px;
+    margin: 0 auto;
+  }
+
+  .visually-hidden-320px {
+    position: fixed;
+    transform: scale(0);
+  }
+
+  section {
+    padding: 25px 0;
+  }
+}

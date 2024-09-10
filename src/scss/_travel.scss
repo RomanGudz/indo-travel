@@ -1,0 +1,239 @@
+.travel {
+  padding-top: 80px;
+}
+
+.travel__container {
+  background: url("../img/map.svg") bottom 4.4vw right 150px/32vw 27.3vw
+    no-repeat;
+}
+
+.travel__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.travel__text {
+  padding-top: 60px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  max-width: 580px;
+}
+
+.travel__accordion-wrapper {
+  padding-top: 80px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__accordion {
+  position: relative;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.travel__accordion:before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 8px;
+  width: 2px;
+  height: calc(100% - 24px);
+  background-color: var(--3);
+}
+
+.travel__accordion-item {
+  position: relative;
+  cursor: pointer;
+  padding-left: 100px;
+  transition: padding-left 0.36s ease-in;
+}
+
+.travel__accordion-item::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: var(--3);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 0 transparent;
+  transition: 0.5s ease transform, box-shadow;
+}
+
+.travel__accordion-item-active:before {
+  transform: scale(2.1);
+  top: 5px;
+  box-shadow: 0 0 4px 0 #ffce20;
+}
+
+.travel__accordion-item-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  border: none;
+  background-color: var(--2);
+}
+
+.travel__accordion-item-text-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out height;
+}
+
+.travel__accordion-item-active .travel__accordion-item-text-wrapper {
+  position: static;
+  height: auto;
+}
+
+.travel__item-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 17px;
+}
+
+@media (max-width: 1024px) {
+  .travel__container {
+    background: url("../img/map.svg") bottom 13.4vw right 42px/ 31.2vw 26.3vw no-repeat;
+  }
+
+  .travel__text {
+    padding-top: 40px;
+    font-size: 30px;
+    max-width: 540px;
+  }
+
+  .travel__accordion-wrapper {
+    padding-top: 60px;
+  }
+
+  .travel__accordion {
+    max-width: 540px;
+  }
+
+  .travel__accordion-item-active:before {
+    transform: scale(1.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .travel {
+    padding-top: 60px;
+  }
+
+  .travel__container {
+    background: url("../img/map.svg") bottom center/380px 320px no-repeat;
+    padding-bottom: 350px;
+  }
+
+  .travel__title {
+    font-size: 14px;
+  }
+
+  .travel__text {
+    padding-top: 30px;
+    font-size: 20px;
+    max-width: 380px;
+  }
+
+  .travel__accordion-wrapper {
+    padding-top: 40px;
+  }
+
+  .travel__accordion {
+    position: relative;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .travel__accordion:before {
+    left: 5px;
+    top: 10px;
+  }
+
+  .travel__accordion-item::before {
+    top: 12px;
+    width: 11px;
+    height: 11px;
+  }
+
+  .travel__accordion-item-active::before {
+    top: 3px;
+  }
+
+  .travel__accordion-item-title {
+    font-size: 16px;
+  }
+
+  .travel__item-text {
+    font-size: 14px;
+    padding-top: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel {
+    padding-top: 50px;
+  }
+
+  .travel__container {
+    background: url("../img/map.svg") bottom center/270px 235px no-repeat;
+    padding-bottom: 245px;
+  }
+
+  .travel__title {
+    font-size: 12px;
+  }
+
+  .travel__text {
+    padding-top: 15px;
+    font-size: 16px;
+    max-width: 480px;
+  }
+
+  .travel__accordion-wrapper {
+    padding-top: 26px;
+  }
+
+  .travel__accordion {
+    max-width: 480px;
+    gap: 25px;
+  }
+
+  .travel__accordion:before {
+    width: 1px;
+    left: 5px;
+    top: 10px;
+  }
+
+  .travel__accordion-item {
+    padding-left: 28px;
+    transition: padding-left 0.36s ease-in;
+  }
+
+  .travel__accordion-item-active::before {
+    transform: scale(1.5);
+    top: 7px;
+  }
+
+  .travel__accordion-item-title {
+    font-size: 14px;
+  }
+
+  .travel__item-text {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+}
