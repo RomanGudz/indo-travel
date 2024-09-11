@@ -179,17 +179,17 @@
   content: "";
 }
 
-.wrapper-options-checkbox-list-label-input:checked::before {
-  content: "\2713";
+.checkbox-icon {
   position: absolute;
-  top: 4px;
+  top: 5px;
   left: 3px;
-  color: var(--3);
-  font-size: 12px;
 }
 
-.wrapper-options-checkbox-list-label-input:disabled {
-  border: 1px solid var(--4);
+.wrapper-options-checkbox-list-label-input:not(:checked) + .checkbox-icon {
+  display: none;
+}
+.wrapper-options-checkbox-list-label-input:checked + .checkbox-icon {
+  display: inline;
 }
 
 @media (hover: none) {
@@ -197,9 +197,6 @@
     font-size: initial;
   }
   .list-people-item:hover {
-    font-size: initial;
-  }
-  .wrapper-options-checkbox-list-label:hover {
     font-size: initial;
   }
 }

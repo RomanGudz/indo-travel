@@ -175,6 +175,20 @@
   line-height: 130%;
 }
 
+.footer__link:hover,
+.footer__text:hover a {
+  color: var(--3);
+}
+
+.footer__link:active,
+.footer__text:hover a {
+  color: var(--2);
+}
+
+.hover-bg-svg:hover {
+  filter: invert(50%) sepia(100%) saturate(500%);
+}
+
 @media (max-width: 1024px) {
   .footer {
     padding-top: 60px;

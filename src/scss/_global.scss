@@ -188,6 +188,17 @@ section {
   background-color: var(--4);
 }
 
+.hover-effect:hover,
+.hover-effect:focus {
+  color: var(--1);
+  fill: var(--1);
+}
+
+.hover-effect:active {
+  color: var(--2);
+  fill: var(--2);
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 1024px;
