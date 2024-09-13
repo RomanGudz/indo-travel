@@ -10,7 +10,7 @@
   <link rel="preload" href="./fonts/Nunito-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Nunito-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="preload" href="./img/fields-swiper.avif" as="image">
 
   <script type="module" src="./js/index.min.js"></script>
@@ -264,14 +264,14 @@
 
           <div class="calculator__form-wrapper">
             <div class="calculator__form">
-              <div class="calculator__form-select-wrapper calculator__form-select">
-                <svg class="calculator__form-select-wrapper-svg" width="12" height="7" viewBox="0 0 12 7"
-                  fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
+              <div class="calculator__form-select-wrapper form-select-wrapper">
+                <svg class="calculator__form-select-wrapper-svg select-wrapper-svg" width="12" height="7"
+                  viewBox="0 0 12 7" fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.705384 0.294459C1.09466 -0.0948134 1.72569 -0.0951574 2.11538 0.293691L5.29366 3.46505C5.68401 3.85454 6.31599 3.85454 6.70634 3.46505L9.88462 0.29369C10.2743 -0.0951576 10.9053 -0.0948134 11.2946 0.294459C11.6842 0.684032 11.6842 1.31565 11.2946 1.70523L6.70711 6.29274C6.31658 6.68326 5.68342 6.68326 5.29289 6.29274L0.705384 1.70523C0.315811 1.31565 0.315811 0.684032 0.705384 0.294459Z" />
                 </svg>
                 Дата
-                <div class="calculator__form-select-wrapper-input-text" data-total="0">
+                <div class="calculator__form-select-wrapper-input-text select-wrapper-input-text" data-total="0">
                   Выбери дату путешествия
                 </div>
                 <div class="calculator__form-select-wrapper-select">
@@ -296,14 +296,14 @@
                   <button class="calculator__form-select-wrapper-date-select-button btn-calc">Готово</button>
                 </div>
               </div>
-              <div class="calculator__form-select-wrapper calculator__form-select">
-                <svg class="calculator__form-select-wrapper-svg" width="12" height="7" viewBox="0 0 12 7"
-                  fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
+              <div class="calculator__form-select-wrapper form-select-wrapper">
+                <svg class="calculator__form-select-wrapper-svg select-wrapper-svg" width="12" height="7"
+                  viewBox="0 0 12 7" fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.705384 0.294459C1.09466 -0.0948134 1.72569 -0.0951574 2.11538 0.293691L5.29366 3.46505C5.68401 3.85454 6.31599 3.85454 6.70634 3.46505L9.88462 0.29369C10.2743 -0.0951576 10.9053 -0.0948134 11.2946 0.294459C11.6842 0.684032 11.6842 1.31565 11.2946 1.70523L6.70711 6.29274C6.31658 6.68326 5.68342 6.68326 5.29289 6.29274L0.705384 1.70523C0.315811 1.31565 0.315811 0.684032 0.705384 0.294459Z" />
                 </svg>
                 Люди
-                <div class="calculator__form-select-wrapper-input-text" data-total="0">Укажи
+                <div class="calculator__form-select-wrapper-input-text select-wrapper-input-text" data-total="0">Укажи
                   количество
                   человек</div>
                 <div class="calculator__form-select-wrapper-select ">
@@ -317,21 +317,21 @@
                   </ul>
                 </div>
               </div>
-              <div class="calculator__form-select-wrapper calculator__form-select">
-                <svg class="calculator__form-select-wrapper-svg" width="12" height="7" viewBox="0 0 12 7"
-                  fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
+              <div class="calculator__form-select-wrapper form-select-wrapper">
+                <svg class="calculator__form-select-wrapper-svg select-wrapper-svg" width="12" height="7"
+                  viewBox="0 0 12 7" fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.705384 0.294459C1.09466 -0.0948134 1.72569 -0.0951574 2.11538 0.293691L5.29366 3.46505C5.68401 3.85454 6.31599 3.85454 6.70634 3.46505L9.88462 0.29369C10.2743 -0.0951576 10.9053 -0.0948134 11.2946 0.294459C11.6842 0.684032 11.6842 1.31565 11.2946 1.70523L6.70711 6.29274C6.31658 6.68326 5.68342 6.68326 5.29289 6.29274L0.705384 1.70523C0.315811 1.31565 0.315811 0.684032 0.705384 0.294459Z" />
                 </svg>
                 Опции
-                <div class="calculator__form-select-wrapper-input-text" data-total="0">Выбери нужные
+                <div class="calculator__form-select-wrapper-input-text select-wrapper-input-text" data-total="0">Выбери
+                  нужные
                   опции</div>
                 <div class="calculator__form-select-wrapper-select wrapper-options">
                   <h3 class="calculator__form-select-wrapper-select-title">Опции</h3>
                   <div class="wrapper-options-checkbox-list">
                     <label class="wrapper-options-checkbox-list-label">
-                      <input type="checkbox" name="nanny" id="nanny"
-                        class="wrapper-options-checkbox-list-label-input" />
+                      <input type="checkbox" name="nanny" id="nanny" class="wrapper-options-checkbox-list-label-input">
                       <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -339,7 +339,7 @@
                           fill="#FCB500" stroke="#FCB500" stroke-miterlimit="10" />
                       </svg>Няня</label>
                     <label class="wrapper-options-checkbox-list-label">
-                      <input type="checkbox" name="menu" id="menu" class="wrapper-options-checkbox-list-label-input" />
+                      <input type="checkbox" name="menu" id="menu" class="wrapper-options-checkbox-list-label-input">
                       <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -347,15 +347,15 @@
                           fill="#FCB500" stroke="#FCB500" stroke-miterlimit="10" />
                       </svg>Персональное меню</label>
                     <label class="wrapper-options-checkbox-list-label">
-                      <input type="checkbox" name="guide" id="guide"
-                        class="wrapper-options-checkbox-list-label-input" /> <svg class="checkbox-icon" width="10"
-                        height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <input type="checkbox" name="guide" id="guide" class="wrapper-options-checkbox-list-label-input">
+                      <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.77334 7.99374L0.988183 5.22421C0.97212 5.20823 0.959374 5.18924 0.950676 5.16833C0.941978 5.14741 0.9375 5.12498 0.9375 5.10233C0.9375 5.07968 0.941978 5.05725 0.950676 5.03633C0.959374 5.01542 0.97212 4.99643 0.988183 4.98046L1.69131 4.27655C1.7585 4.20936 1.86709 4.20936 1.93428 4.27655L3.76787 6.09921C3.83506 6.16639 3.94443 6.16561 4.01162 6.09842L8.06318 2.0078C8.13037 1.93983 8.23975 1.93983 8.30771 2.00702L9.01162 2.71093C9.07881 2.77811 9.07881 2.88671 9.0124 2.95389L4.59834 7.4078L4.59912 7.40858L4.01709 7.99374C3.9499 8.06093 3.84053 8.06093 3.77334 7.99374Z"
                           fill="#FCB500" stroke="#FCB500" stroke-miterlimit="10" />
                       </svg>Персональный гид</label>
                     <label class="wrapper-options-checkbox-list-label">
-                      <input type="checkbox" name="tent" id="tent" class="wrapper-options-checkbox-list-label-input" />
+                      <input type="checkbox" name="tent" id="tent" class="wrapper-options-checkbox-list-label-input">
                       <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -499,39 +499,39 @@
           <h2 class="booking__form-title">Бронирование тура</h2>
           <div class="booking__form-inputs">
             <div class="booking__select-wrapper">
-              <div class="booking__form-select calculator__form-select-wrapper">
-                <svg class="booking__form-select-wrapper-svg calculator__form-select-wrapper-svg" width="12" height="7"
+              <div class="booking__form-select form-select-wrapper">
+                <svg class="booking__form-select-wrapper-svg  select-wrapper-svg" width="12" height="7"
                   viewBox="0 0 12 7" fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.705384 0.294459C1.09466 -0.0948134 1.72569 -0.0951574 2.11538 0.293691L5.29366 3.46505C5.68401 3.85454 6.31599 3.85454 6.70634 3.46505L9.88462 0.29369C10.2743 -0.0951576 10.9053 -0.0948134 11.2946 0.294459C11.6842 0.684032 11.6842 1.31565 11.2946 1.70523L6.70711 6.29274C6.31658 6.68326 5.68342 6.68326 5.29289 6.29274L0.705384 1.70523C0.315811 1.31565 0.315811 0.684032 0.705384 0.294459Z" />
                 </svg>
                 Дата
-                <div class="booking__form-select-wrapper-input calculator__form-select-wrapper-input-text"
-                  data-total="0" id="booking__date">
+                <div class="booking__form-select-wrapper-input select-wrapper-input-text" data-total="0"
+                  id="booking__date">
                   Выбери дату путешествия
                 </div>
               </div>
-              <div class="booking__form-select calculator__form-select-wrapper">
-                <svg class="booking__form-select-wrapper-svg calculator__form-select-wrapper-svg" width="12" height="7"
+              <div class="booking__form-select form-select-wrapper">
+                <svg class="booking__form-select-wrapper-svg  select-wrapper-svg" width="12" height="7"
                   viewBox="0 0 12 7" fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.705384 0.294459C1.09466 -0.0948134 1.72569 -0.0951574 2.11538 0.293691L5.29366 3.46505C5.68401 3.85454 6.31599 3.85454 6.70634 3.46505L9.88462 0.29369C10.2743 -0.0951576 10.9053 -0.0948134 11.2946 0.294459C11.6842 0.684032 11.6842 1.31565 11.2946 1.70523L6.70711 6.29274C6.31658 6.68326 5.68342 6.68326 5.29289 6.29274L0.705384 1.70523C0.315811 1.31565 0.315811 0.684032 0.705384 0.294459Z" />
                 </svg>
                 Люди
-                <div class="booking__form-select-wrapper-input calculator__form-select-wrapper-input-text "
-                  data-total="0" id="booking__people">Укажи
+                <div class="booking__form-select-wrapper-input select-wrapper-input-text " data-total="0"
+                  id="booking__people">Укажи
                   количество
                   человек</div>
               </div>
-              <div class="booking__form-select calculator__form-select-wrapper">
-                <svg class="booking__form-select-wrapper-svg calculator__form-select-wrapper-svg" width="12" height="7"
+              <div class="booking__form-select form-select-wrapper">
+                <svg class="booking__form-select-wrapper-svg  select-wrapper-svg" width="12" height="7"
                   viewBox="0 0 12 7" fill="currnetColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.705384 0.294459C1.09466 -0.0948134 1.72569 -0.0951574 2.11538 0.293691L5.29366 3.46505C5.68401 3.85454 6.31599 3.85454 6.70634 3.46505L9.88462 0.29369C10.2743 -0.0951576 10.9053 -0.0948134 11.2946 0.294459C11.6842 0.684032 11.6842 1.31565 11.2946 1.70523L6.70711 6.29274C6.31658 6.68326 5.68342 6.68326 5.29289 6.29274L0.705384 1.70523C0.315811 1.31565 0.315811 0.684032 0.705384 0.294459Z" />
                 </svg>
                 Опции
-                <div class="booking__form-select-wrapper-input calculator__form-select-wrapper-input-text"
-                  data-total="0" id="booking__options">Выбери
+                <div class="booking__form-select-wrapper-input select-wrapper-input-text" data-total="0"
+                  id="booking__options">Выбери
                   нужные
                   опции</div>
               </div>

@@ -51,12 +51,13 @@ document.addEventListener('click', (event) => {
 
 const items = document.querySelectorAll('.travel__accordion-item');
 const textWrapper = document.querySelectorAll('.travel__accordion-item-text-wrapper');
-
+textWrapper[0].style.height = '206px';
 
 items.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     items.forEach((_, idx) => {
       const wrapper = textWrapper[idx];
+
 
       if (index === idx) {
         if (items[idx].classList.contains('travel__accordion-item-active')) {
@@ -92,7 +93,7 @@ hoverZoneLeft.addEventListener('mouseenter', (e) => {
 });
 
 
-const selects = document.querySelectorAll('.calculator__form-select');
+const selects = document.querySelectorAll('.calculator__form-select-wrapper');
 const selectMoth = document.querySelectorAll('.calculator__form-list-month');
 const listDay = document.querySelectorAll('.calculator__form-list-day');
 const countpeople = document.querySelectorAll('.list-people-item');
@@ -100,6 +101,7 @@ const btnReady = document.querySelectorAll('.btn-calc');
 const inputText = document.querySelectorAll('.calculator__form-select-wrapper-input-text');
 const checkboxes = document.querySelectorAll('.wrapper-options-checkbox-list-label input[type="checkbox"]');
 const totalPrice = document.querySelector('.booking__price');
+const infoCalc = document.querySelector('.calculator__form-button');
 const info = document.querySelector('.booking__data');
 const fromDate = document.querySelector('#booking__date');
 const fromPeople = document.querySelector('#booking__people');
@@ -107,6 +109,7 @@ const fromOptions = document.querySelector('#booking__options');
 
 const addInfo = () => {
   info.textContent = '';
+
   const day = inputText[0].textContent;
   const peoples = inputText[1].textContent
   if (Number(peoples)) {
@@ -115,6 +118,7 @@ const addInfo = () => {
     fromDate.textContent = day;
     fromPeople.textContent = peoples;
     fromOptions.textContent = inputText[2].textContent;
+
   }
 };
 
@@ -159,6 +163,7 @@ const calc = () => {
       console.log('total: ', total);
     }
   });
+  infoCalc.textContent = total + ' &#36;';
   totalPrice.innerHTML = total + ' &#36;';
 };
 

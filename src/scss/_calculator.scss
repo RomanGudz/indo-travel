@@ -13,6 +13,8 @@
     url("../img/booking-bg.webp") 1x,
     url("../img/booking-bg.jpg") 1x
   );
+  position: relative;
+  z-index: 1;
 }
 
 .calculator__info {
@@ -61,7 +63,7 @@
   align-items: center;
 }
 
-.calculator__form-select-wrapper {
+.form-select-wrapper {
   cursor: pointer;
   position: relative;
   display: flex;
@@ -74,9 +76,9 @@
   width: 15.1vw;
 }
 
-.calculator__form-select-wrapper-svg {
+.select-wrapper-svg {
   position: absolute;
-  left: 11vw;
+  left: 80%;
   top: 18px;
   fill: var(--2);
   border-radius: 100%;
@@ -84,10 +86,10 @@
   height: 7px;
 }
 
-.calculator__form-select-wrapper::before {
+.form-select-wrapper::before {
   position: absolute;
   content: "";
-  left: calc(11vw - 6px);
+  left: calc(80% - 6px);
   top: calc(18px - 8px);
   width: 24px;
   height: 24px;
@@ -96,7 +98,7 @@
   transition: 0.5s ease background-color;
 }
 
-.calculator__form-select-wrapper-input-text {
+.select-wrapper-input-text {
   font-weight: 300;
   opacity: 0.7;
   max-width: 140px;
@@ -113,22 +115,22 @@
   line-height: 130%;
 }
 
-.calculator__form-select-wrapper:hover::before {
+.form-select-wrapper:hover::before {
   background-color: var(--2);
 }
 
-.calculator__form-select-wrapper:hover .calculator__form-select-wrapper-svg,
-.calculator__form-select-wrapper:focus .calculator__form-select-wrapper-svg,
-.calculator__form-select-wrapper:active .calculator__form-select-wrapper-svg {
+.form-select-wrapper:hover .select-wrapper-svg,
+.form-select-wrapper:focus .select-wrapper-svg,
+.form-select-wrapper:active .select-wrapper-svg {
   fill: var(--3);
 }
 
-.calculator__form-select-wrapper:active {
+.form-select-wrapper:active {
   color: var(--3);
 }
 
 @media (hover: none) {
-  .calculator__form-select-wrapper:hover::before {
+  .form-select-wrapper:hover::before {
     background-color: initial;
   }
 }
@@ -159,14 +161,14 @@
     border-radius: 16px;
   }
 
-  .calculator__form-select-wrapper {
+  .form-select-wrapper {
     display: flex;
     flex-direction: column;
     gap: 12px;
     width: 18.2vw;
   }
 
-  .calculator__form-select-wrapper::before {
+  .form-select-wrapper::before {
     left: 13.6vw;
   }
 
@@ -221,12 +223,12 @@
     gap: 30px;
   }
 
-  .calculator__form-select-wrapper {
+  .form-select-wrapper {
     flex-direction: column;
     gap: 15px;
   }
 
-  .calculator__form-select-wrapper::before {
+  .form-select-wrapper::before {
     left: 18.7vw;
   }
 
@@ -277,21 +279,21 @@
     gap: 25px;
   }
 
-  .calculator__form-select-wrapper {
+  .form-select-wrapper {
     padding-top: 15px;
     gap: 15px;
     width: 31.2vw;
   }
-  .calculator__form-select-wrapper:first-of-type {
+  .form-select-wrapper:first-of-type {
     padding-top: 8px;
   }
 
-  .calculator__form-select-wrapper::before {
+  .form-select-wrapper::before {
     left: 24.2vw;
     top: 13px;
   }
 
-  .calculator__form-select-wrapper-input-text {
+  .select-wrapper-input-text {
     width: 138px;
   }
 
