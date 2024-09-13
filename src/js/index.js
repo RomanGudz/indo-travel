@@ -163,7 +163,7 @@ const calc = () => {
       console.log('total: ', total);
     }
   });
-  infoCalc.textContent = total + ' &#36;';
+  infoCalc.innerHTML = total + ' &#36;';
   totalPrice.innerHTML = total + ' &#36;';
 };
 
